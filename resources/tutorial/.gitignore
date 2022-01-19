@@ -3,3 +3,4 @@ out/*.csv
 .Rhistory
 .RData
 plots.R
+trace.csv

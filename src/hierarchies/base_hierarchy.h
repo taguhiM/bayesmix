@@ -36,6 +36,12 @@ class BaseHierarchy : public AbstractHierarchy {
   BaseHierarchy() = default;
   ~BaseHierarchy() = default;
 
+  //! Container for state values
+  State state;
+
+  //! Container for prior hyperparameters values
+  std::shared_ptr<Hyperparams> hypers;
+
   //! Returns an independent, data-less copy of this object
   virtual std::shared_ptr<AbstractHierarchy> clone() const override {
     auto out = std::make_shared<Derived>(static_cast<Derived const &>(*this));
@@ -190,12 +196,6 @@ class BaseHierarchy : public AbstractHierarchy {
     return google::protobuf::internal::down_cast<
         const bayesmix::AlgorithmState::HierarchyHypers &>(state_);
   }
-
-  //! Container for state values
-  State state;
-
-  //! Container for prior hyperparameters values
-  std::shared_ptr<Hyperparams> hypers;
 
   //! Container for posterior hyperparameters values
   Hyperparams posterior_hypers;
