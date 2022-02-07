@@ -34,6 +34,11 @@ message TruncSBState {
   Vector logweights = 2;
 }
 
+message MFMState {
+  double lambda = 1; // rate parameter of Poisson prior on number of compunents of the MFM
+  double gamma = 2; // parameter of the dirichlet distribution for the mixing weights
+}
+
 /*
  * Wrapper of all possible mixing states into a single oneof
  */
@@ -43,5 +48,6 @@ message MixingState {
     PYState py_state = 2;
     LogSBState log_sb_state = 3;
     TruncSBState trunc_sb_state = 4;
+    MFMState mfm_state = 5;
   }
 }
