@@ -4,6 +4,8 @@
 #include <google/protobuf/message.h>
 
 #include <Eigen/Dense>
+#include <chrono>
+#include <ctime>
 #include <memory>
 #include <vector>
 
@@ -89,6 +91,8 @@ class MixtureFiniteMixing
 
   //! Computes V_n[t] and stores it in V
   void compute_V_t(double t, unsigned int n) const;
+
+  mutable double ex_cum_time = 0.0;
 };
 
 #endif  // BAYESMIX_MIXINGS_MIXTURE_FINITE_MIXTURES_H_

@@ -143,6 +143,9 @@ void MixtureFiniteMixing::init_V_C(unsigned int n) const {
 }
 
 void MixtureFiniteMixing::compute_V_t(double t, unsigned int n) const {
+  auto start = std::chrono::high_resolution_clock::now();
+  //  std::clock_t c_start = std::clock();
+  //  auto t_start = std::chrono::high_resolution_clock::now();
   double sum = 0;
   unsigned int k = 1;
   double last_term_sum_rate =
@@ -177,4 +180,12 @@ void MixtureFiniteMixing::compute_V_t(double t, unsigned int n) const {
     ++k;
   }
   V[t] = sum;
+  //  std::clock_t c_end = std::clock();
+  //  auto t_end = std::chrono::high_resolution_clock::now();
+  auto stop = std::chrono::high_resolution_clock::now();
+
+  auto duration =
+      std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+  std::cout << std::fixed << std::setprecision(8) << "---- exec time ----"
+            << duration.count() << std::endl;
 }
