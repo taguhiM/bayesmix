@@ -31,7 +31,7 @@ Eigen::MatrixXd BaseAlgorithm::eval_lpdf(
     lpdf.push_back(lpdf_from_state(grid, hier_covariate, mix_covariate));
     if (verbose) {
       ++(*bar);
-      bar->display();
+      // bar->display();
     }
   }
   collector->reset();

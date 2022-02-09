@@ -66,7 +66,7 @@ class BaseAlgorithm {
       iter++;
       if (verbose) {
         ++(*bar);
-        bar->display();
+        // bar->display();
       }
     }
     collector->finish_collecting();
