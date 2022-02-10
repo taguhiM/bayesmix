@@ -1,0 +1,130 @@
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 3s
+Done
+Computing log-density...
+[============================================================] 100% 0.82s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 3.017s
+Done
+Computing log-density...
+[============================================================] 100% 0.832s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 3.055s
+Done
+Computing log-density...
+[============================================================] 100% 0.828s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.974s
+Done
+Computing log-density...
+[============================================================] 100% 0.816s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.991s
+Done
+Computing log-density...
+[============================================================] 100% 0.837s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.951s
+Done
+Computing log-density...
+[============================================================] 100% 0.812s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.995s
+Done
+Computing log-density...
+[============================================================] 100% 0.823s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.93s
+Done
+Computing log-density...
+[============================================================] 100% 0.981s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.961s
+Done
+Computing log-density...
+[============================================================] 100% 0.831s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc
+Running run_mcmc.cc
+Creating FileCollector, writing to file: resources/tutorial/out/chains.recordio
+Initializing... Done
+Running Neal8 algorithm (m=3 aux. blocks) with NNIG hierarchies, MFM mixing...
+[============================================================] 100% 2.939s
+Done
+Computing log-density...
+[============================================================] 100% 0.801s
+Done
+Successfully wrote density to resources/tutorial/out/density.csv
+Successfully wrote number of clusters to resources/tutorial/out/numclust.csv
+Successfully wrote cluster allocations to resources/tutorial/out/clustering.csv
+End of run_mcmc.cc

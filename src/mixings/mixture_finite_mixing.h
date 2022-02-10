@@ -94,14 +94,14 @@ class MixtureFiniteMixing
 
  protected:
   //! Vector V needed to cumpute the probabilities of a new or existing cluster
-  mutable std::vector<double> V{};
+  static std::vector<double> V;
 
   //! Constant that is multipied by each value of V for numerical reasons, it
   //! is computed as the first term of the series of V_n[0].
-  mutable double C;
+  static double C;
 
   //! Checks if V has been initialized by init_V_C
-  mutable bool V_C_are_initialized = false;
+  static bool V_C_are_initialized;
 
   //! Initializes V to a vector of -1 of length n+1 and computes and assigns C
   void init_V_and_C(unsigned int n) const;

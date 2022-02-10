@@ -11,6 +11,10 @@
 #include "src/hierarchies/abstract_hierarchy.h"
 #include "src/utils/rng.h"
 
+std::vector<double> MixtureFiniteMixing::V = {};
+double MixtureFiniteMixing::C = 0;
+bool MixtureFiniteMixing::V_C_are_initialized = false;
+
 void MixtureFiniteMixing::update_state(
     const std::vector<std::shared_ptr<AbstractHierarchy>> &unique_values,
     const std::vector<unsigned int> &allocations) {
