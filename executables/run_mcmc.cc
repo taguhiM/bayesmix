@@ -1,10 +1,22 @@
 #include <math.h>
+#include <pybind11/embed.h>
+#include <pybind11/pybind11.h>
 
 #include <fstream>
 #include <iostream>
 
 #include "lib/argparse/argparse.h"
 #include "src/includes.h"
+
+namespace py = pybind11;
+using namespace py::literals;
+
+py::scoped_interpreter guard{};
+py::module_ numpy = py::module_::import("numpy");
+py::module_ fun = py::module_::import("fun");
+py::module_ numpy_random = py::module_::import("numpy.random");
+py::object py_engine = numpy_random.attr("MT19937")();
+py::object py_gen = numpy_random.attr("Generator")(py_engine);
 
 #define EMPTYSTR std::string("\"\"")
 
@@ -30,6 +42,9 @@ bool check_args(const argparse::ArgumentParser &args) {
 }
 
 int main(int argc, char *argv[]) {
+  // to check python interpreter is working
+  py::print("Hello from Python");
+
   argparse::ArgumentParser args("bayesmix::run");
 
   args.add_argument("--algo-params-file")

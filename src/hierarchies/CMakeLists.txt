@@ -13,4 +13,6 @@ target_sources(bayesmix
     fa_hierarchy.cc
     lapnig_hierarchy.h
     lapnig_hierarchy.cc
+    python_hierarchy.h
+        python_hierarchy.cc
 )

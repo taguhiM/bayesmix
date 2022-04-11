@@ -20,6 +20,7 @@ set(CMAKE_FIND_PACKAGE_PREFER_CONFIG TRUE)
 # Require PkgConfig
 find_package(PkgConfig REQUIRED)
 find_package(OpenMP REQUIRED)
+find_package(pybind11 REQUIRED)
 
 # TBB CMake integration
 message(STATUS "Using math TBB")
@@ -100,10 +101,12 @@ set(LINK_LIBRARIES
 	pthread
 	protobuf::libprotobuf
 	TBB::tbb
-  OpenMP::OpenMP_CXX
+    OpenMP::OpenMP_CXX
+    pybind11::embed
+    pybind11::pybind11
 )
 
-set(COMPILE_OPTIONS -D_REENTRANT -fPIC)
+set(COMPILE_OPTIONS -D_REENTRANT -fPIC -fvisibility=hidden)
 
 file(GLOB ProtoFiles "${BASEPATH}/src/proto/*.proto")
 set(PROTO_DIR proto)
