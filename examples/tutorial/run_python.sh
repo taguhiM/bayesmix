@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 build/run_mcmc \
-  --algo-params-file resources/tutorial/algo.asciipb \
+  --algo-params-file resources/tutorial/algo_python.asciipb \
   --hier-type Python --hier-args resources/tutorial/python.asciipb \
   --mix-type DP --mix-args resources/tutorial/dp_gamma.asciipb \
   --coll-name resources/tutorial/out/chains.recordio \
